@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الدراسات الاجتماعية – الأداءات والتقييمات – الصف الأول الإعدادي</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <div class="logo">د</div>
+    <div>
+      <div class="btitle" id="bookTitle">الدراسات الاجتماعية – الأداءات والتقييمات</div>
+      <div class="bsub">الصف الأول الإعدادي – الفصل الدراسي الأول</div>
+    </div>
+  </div>
+  <div class="studentbar">
+    <span id="whoChip" class="chip" onclick="switchStudent()">👤 زائر</span>
+    <span id="timerChip" class="chip hidden">⏱ <b id="timerVal">--:--</b></span>
+  </div>
+</header>
+<nav class="tabs" id="tabs">
+  <button data-view="home" class="on">📚 الفهرس</button>
+  <button data-view="search">🔍 البحث</button>
+  <button data-view="progress">📈 تقدمي</button>
+  <button data-view="teacher">🧑‍🏫 لوحة المعلم</button>
+</nav>
+<main id="view"></main>
+<div id="zoomModal" class="modal hidden" onclick="this.classList.add('hidden')">
+  <img id="zoomImg" src="" alt="تكبير الصورة">
+</div>
+<footer class="foot">
+  كتاب إلكتروني تفاعلي مُولَّد من الكتاب الورقي الأصلي (73 صفحة) — تُحفَظ الإجابات محلياً في هذا الجهاز فقط.
+</footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
